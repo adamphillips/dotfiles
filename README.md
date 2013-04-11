@@ -1,4 +1,6 @@
-dotfiles
+My Dotfiles
 ========
 
-My dotfiles
+Clone into ~/.dotfiles
+
+cd into folder and run link.sh
