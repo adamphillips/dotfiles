@@ -27,7 +27,9 @@ alias gls='git log'
 
 alias reload=' if source ~/.bash_profile; then echo "Reloaded bash_profile";fi'
 
+# Command shortcuts
 alias sb='subl .'
+alias v='vim'
 
 # Path shortcuts
 alias jam='cd ~/Projects/Development/JamScript/'
