@@ -1,3 +1,4 @@
+export PATH=~/.rbenv/shims:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/bin:$PATH
 export PATH=/Users/aphillips/bin:$PATH
@@ -30,6 +31,7 @@ alias reload=' if source ~/.bash_profile; then echo "Reloaded bash_profile";fi'
 # Command shortcuts
 alias sb='subl .'
 alias v='vim'
+alias vm='vim .'
 
 # Path shortcuts
 alias jam='cd ~/Projects/Development/JamScript/'
@@ -75,5 +77,3 @@ export RUBY_GC_MALLOC_LIMIT=100000000
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
-# Start tmux
-tmux
