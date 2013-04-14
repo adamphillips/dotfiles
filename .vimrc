@@ -68,6 +68,13 @@ nnoremap <leader>al :left<CR>
 nnoremap <leader>ar :right<CR>
 nnoremap <leader>ac :center<CR>
 
+
+" Enable autocomplete
+filetype plugin on
+set ofu=syntaxcomplete#Complete
+" Tab autocomplete
+":imap <tab> <c-x><c-o>
+
 " Asthetics
 " =======
 
@@ -81,12 +88,14 @@ hi VertSplit      ctermfg=237 ctermbg=237
 hi Statement      ctermfg=221
 hi LineNr         ctermfg=240 ctermbg=236
 hi Visual         ctermbg=234
-hi Cursor     cterm=reverse ctermfg=1 ctermbg=2
-hi iCursor     cterm=standout ctermfg=1 ctermbg=2
-hi CursorLine     cterm=standout ctermfg=235
-hi CursorColumn   cterm=standout ctermfg=233
-hi ExtraWhitespace  ctermbg=235
-hi Tab              ctermbg=red
+hi Cursor         cterm=reverse ctermfg=1 ctermbg=2
+hi iCursor        cterm=standout ctermfg=1 ctermbg=2
+hi CursorLine     cterm=standout ctermfg=237 ctermbg=250
+hi CursorColumn   cterm=standout ctermfg=233 ctermbg=250
+hi ExtraWhitespace  ctermbg=233
+hi Tab              ctermbg=red 
+hi Pmenu          ctermbg=237 ctermfg=245
+hi PmenuSel       ctermbg=235 ctermfg=white
 
 " Show leading whitespace that includes spaces, and trailing whitespace.
 :autocmd BufWinEnter * match ExtraWhitespace /\s\+\%#\@<!$/
