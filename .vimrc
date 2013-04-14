@@ -13,6 +13,7 @@ let mapleader=","
 let NERDTreeQuitOnOpen=1
 
 " General sensible defaults
+set expandtab     " use spaces for tabs
 set nowrap        " don't wrap lines
 set tabstop=2     " a tab is four spaces
 set backspace=indent,eol,start
@@ -74,17 +75,21 @@ set linespace=1
 " Enable 256 colours
 set t_Co=256
 
-hi StatusLine 		ctermfg=237 ctermbg=242
-hi StatusLineNC 	ctermfg=237 ctermbg=242
-hi VertSplit    	ctermfg=237 ctermbg=237
-hi Statement  		ctermfg=221
-hi LineNr 				ctermfg=240 ctermbg=236
-hi Visual 				ctermbg=234
-hi CursorLine 		cterm=standout ctermbg=234
-hi CursorColumn 		cterm=standout ctermbg=234
-hi ExtraWhitespace ctermbg=235
+hi StatusLine     ctermfg=237 ctermbg=242
+hi StatusLineNC   ctermfg=237 ctermbg=242
+hi VertSplit      ctermfg=237 ctermbg=237
+hi Statement      ctermfg=221
+hi LineNr         ctermfg=240 ctermbg=236
+hi Visual         ctermbg=234
+hi Cursor     cterm=reverse ctermfg=1 ctermbg=2
+hi iCursor     cterm=standout ctermfg=1 ctermbg=2
+hi CursorLine     cterm=standout ctermfg=235
+hi CursorColumn   cterm=standout ctermfg=233
+hi ExtraWhitespace  ctermbg=235
+hi Tab              ctermbg=red
 
 " Show leading whitespace that includes spaces, and trailing whitespace.
-:autocmd BufWinEnter * match ExtraWhitespace /^\s* \s*\|\s\+$/
-
+:autocmd BufWinEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+" Highlight tabs
+:autocmd BufWinEnter * match Tab /\t/
 
