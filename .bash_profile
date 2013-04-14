@@ -19,6 +19,7 @@ alias la='ls -la'
 
 alias grep='grep --color=auto'
 
+alias ga='git add'
 alias gs='git st -s'
 alias gd='git diff'
 alias gc='git dc'
@@ -29,6 +30,7 @@ alias gls='git log'
 alias reload=' if source ~/.bash_profile; then echo "Reloaded bash_profile";fi'
 
 # Command shortcuts
+alias h='highlight --out-format=xterm256 --line-number-length=3 --line-numbers --style=dusk --force --quiet'
 alias sb='subl .'
 alias v='vim'
 alias vm='vim .'
@@ -40,9 +42,11 @@ alias notes='cd ~/Documents/Notes/'
 
 alias apps='cd /opt/boxen/repo; sb'
 
+# Shortcut to start tmuxinator session
+alias o='mux start'
+
 # Fancier aliases to create tmux sessions
 alias tsd='~/.tmux/tsd.sh'
-
 
 # Load bash completion
 # if [ -f $(brew --prefix)/etc/bash_completion ]; then
@@ -60,8 +64,8 @@ if [ -f ~/.bash/git-completion.bash ]; then
 fi
 
 # Git in prompt
-GIT_PS1_SHOWDIRTY_STATE='.'
-GIT_PS1_SHOWUNTRACKEDFILES='+'
+# GIT_PS1_SHOWDIRTY_STATE='.'
+# GIT_PS1_SHOWUNTRACKEDFILES='+'
 # GIT_PS1_SHOWSTASHSTATE='.'
 # GIT_PS1_SHOWUPSTREAM='auto'
 
