@@ -68,7 +68,6 @@ nnoremap <leader>al :left<CR>
 nnoremap <leader>ar :right<CR>
 nnoremap <leader>ac :center<CR>
 
-
 " Enable autocomplete
 filetype plugin on
 set ofu=syntaxcomplete#Complete
@@ -96,6 +95,7 @@ hi ExtraWhitespace  ctermbg=233
 hi Tab              ctermbg=red 
 hi Pmenu          ctermbg=237 ctermfg=245
 hi PmenuSel       ctermbg=235 ctermfg=white
+hi Search         ctermfg=black cterm=standout
 
 " Show leading whitespace that includes spaces, and trailing whitespace.
 :autocmd BufWinEnter * match ExtraWhitespace /\s\+\%#\@<!$/
