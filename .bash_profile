@@ -29,6 +29,8 @@ alias gl='git ls'
 alias gll='git ll'
 alias gls='git log'
 
+alias be='bundle exec'
+
 alias reload=' if source ~/.bash_profile; then echo "Reloaded bash_profile";fi'
 
 # Command shortcuts
