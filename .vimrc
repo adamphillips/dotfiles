@@ -118,6 +118,13 @@ hi Pmenu          ctermbg=237 ctermfg=245
 hi PmenuSel       ctermbg=235 ctermfg=white
 hi Search         ctermfg=black cterm=standout
 
+" Git gutter colours
+hi SignColumn           ctermbg=236
+"hi GitGutterAddLine     ctermbg=1
+"hi GitGutterChangeLine  ctermbg=2
+"hi GitGutterDeleteLine  ctermbg=3
+"hi GitGutterChangeDeleteLine  ctermbg=4
+
 " Show leading whitespace that includes spaces, and trailing whitespace.
 :autocmd BufWinEnter * match ExtraWhitespace /\s+$/
 " Highlight tabs
